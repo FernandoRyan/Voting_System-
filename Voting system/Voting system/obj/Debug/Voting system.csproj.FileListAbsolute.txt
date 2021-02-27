@@ -1,0 +1,16 @@
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe.config
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.pdb
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\bin\Debug\FontAwesome.Sharp.Pro.dll
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csprojAssemblyReference.cache
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Admin.resources
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Properties.Resources.resources
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.GenerateResource.cache
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.CoreCompileInputs.cache
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.CopyComplete
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.exe
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.pdb
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Register_Candidate.resources
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Register_Voter.resources
+C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Election_Results.resources
