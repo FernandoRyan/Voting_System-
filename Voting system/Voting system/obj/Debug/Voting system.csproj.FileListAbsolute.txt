@@ -14,3 +14,19 @@ C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Votin
 C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Register_Candidate.resources
 C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Register_Voter.resources
 C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Election_Results.resources
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe.config
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.pdb
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\bin\Debug\FontAwesome.Sharp.dll
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\bin\Debug\FontAwesome.Sharp.Pro.dll
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csprojAssemblyReference.cache
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Election_Results.resources
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Register_Candidate.resources
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Register_Voter.resources
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Admin.resources
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Properties.Resources.resources
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.GenerateResource.cache
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.CoreCompileInputs.cache
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.CopyComplete
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.exe
+D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.pdb
