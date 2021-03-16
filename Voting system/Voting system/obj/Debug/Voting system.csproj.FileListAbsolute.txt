@@ -15,6 +15,7 @@ C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Votin
 C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Register_Voter.resources
 C:\Users\ryana\OneDrive\Desktop\Voting system\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Election_Results.resources
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe.config
 D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe
 D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.pdb
@@ -32,6 +33,8 @@ D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting sy
 D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.exe
 D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.pdb
 =======
+=======
+>>>>>>> Stashed changes
 C:\Users\nethma\Desktop\voting\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe.config
 C:\Users\nethma\Desktop\voting\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe
 C:\Users\nethma\Desktop\voting\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.pdb
@@ -48,4 +51,7 @@ C:\Users\nethma\Desktop\voting\Voting_System-\Voting system\Voting system\obj\De
 C:\Users\nethma\Desktop\voting\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.CopyComplete
 C:\Users\nethma\Desktop\voting\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.exe
 C:\Users\nethma\Desktop\voting\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.pdb
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
