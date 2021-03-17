@@ -56,10 +56,13 @@ namespace Voting_system
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            con.Open();
-            con.Connection = con;
-            con.CommandText = "select * from ";
-            con.Close();
+            /* con.Open();
+             con.Connection = con;
+             con.CommandText = "select * from ";
+             con.Close();*/
+            Register_Candidate rc = new Register_Candidate();
+            this.Hide();
+            rc.Show();
         }
     }
 }
