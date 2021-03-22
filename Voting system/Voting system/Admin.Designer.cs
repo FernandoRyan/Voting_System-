@@ -96,6 +96,7 @@ namespace Voting_system
             this.LoginBtn.TabIndex = 3;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // lgAdmin
             // 
@@ -117,6 +118,8 @@ namespace Voting_system
             this.PWD.Size = new System.Drawing.Size(247, 20);
             this.PWD.TabIndex = 1;
             this.PWD.Text = "Password";
+            this.PWD.Enter += new System.EventHandler(this.txtPassEnter);
+            this.PWD.Leave += new System.EventHandler(this.txtPassLeave);
             // 
             // uName
             // 
@@ -126,6 +129,8 @@ namespace Voting_system
             this.uName.Size = new System.Drawing.Size(247, 20);
             this.uName.TabIndex = 0;
             this.uName.Text = "Username";
+            this.uName.TextChanged += new System.EventHandler(this.uName_TextChanged);
+            this.uName.Leave += new System.EventHandler(this.txtUserLeave);
             // 
             // Admin
             // 
@@ -136,7 +141,9 @@ namespace Voting_system
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.Cntpanel.ResumeLayout(false);
             this.Cntpanel.PerformLayout();

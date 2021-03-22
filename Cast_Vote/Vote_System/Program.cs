@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Voting_system
+namespace Vote_System
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Voting_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin());
+            Application.Run(new Vote());
         }
     }
 }
