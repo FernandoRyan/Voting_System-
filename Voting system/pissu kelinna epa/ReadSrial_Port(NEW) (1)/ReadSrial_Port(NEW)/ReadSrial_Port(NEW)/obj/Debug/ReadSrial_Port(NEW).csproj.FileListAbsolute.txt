@@ -1,0 +1,18 @@
+E:\Test-Visual\ReadSrial_Port\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\bin\Debug\ReadSrial_Port(NEW).exe
+E:\Test-Visual\ReadSrial_Port\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\bin\Debug\ReadSrial_Port(NEW).pdb
+E:\Test-Visual\ReadSrial_Port\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csprojAssemblyReference.cache
+E:\Test-Visual\ReadSrial_Port\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.Form1.resources
+E:\Test-Visual\ReadSrial_Port\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.Properties.Resources.resources
+E:\Test-Visual\ReadSrial_Port\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csproj.GenerateResource.cache
+E:\Test-Visual\ReadSrial_Port\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csproj.CoreCompileInputs.cache
+E:\Test-Visual\ReadSrial_Port\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).exe
+E:\Test-Visual\ReadSrial_Port\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).pdb
+D:\Downloads\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\bin\Debug\ReadSrial_Port(NEW).exe
+D:\Downloads\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\bin\Debug\ReadSrial_Port(NEW).pdb
+D:\Downloads\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csprojAssemblyReference.cache
+D:\Downloads\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.Form1.resources
+D:\Downloads\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.Properties.Resources.resources
+D:\Downloads\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csproj.GenerateResource.cache
+D:\Downloads\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csproj.CoreCompileInputs.cache
+D:\Downloads\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).exe
+D:\Downloads\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).pdb
