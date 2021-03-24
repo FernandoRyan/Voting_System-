@@ -55,6 +55,12 @@
     <Compile Include="Cast_Vote.Designer.cs">
       <DependentUpon>Cast_Vote.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sri LankaPeople%27sFreedomAlliance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sri LankaPeople%27sFreedomAlliance.Designer.cs">
+      <DependentUpon>Sri LankaPeople%27sFreedomAlliance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vote.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sri LankaPeople%27sFreedomAlliance.resx">
+      <DependentUpon>Sri LankaPeople%27sFreedomAlliance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vote.resx">
       <DependentUpon>Vote.cs</DependentUpon>
     </EmbeddedResource>

@@ -118,8 +118,7 @@ namespace Voting_system
             this.PWD.Size = new System.Drawing.Size(247, 20);
             this.PWD.TabIndex = 1;
             this.PWD.Text = "Password";
-            this.PWD.Enter += new System.EventHandler(this.txtPassEnter);
-            this.PWD.Leave += new System.EventHandler(this.txtPassLeave);
+            
             // 
             // uName
             // 
@@ -129,8 +128,7 @@ namespace Voting_system
             this.uName.Size = new System.Drawing.Size(247, 20);
             this.uName.TabIndex = 0;
             this.uName.Text = "Username";
-            this.uName.TextChanged += new System.EventHandler(this.uName_TextChanged);
-            this.uName.Leave += new System.EventHandler(this.txtUserLeave);
+          
             // 
             // Admin
             // 

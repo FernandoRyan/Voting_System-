@@ -13,56 +13,35 @@ namespace Voting_system
 {
     public partial class Admin : Form
     {
-        SqlConnection con = new SqlConnection();
+        //Establishing the database connectivity
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryana\OneDrive\Documents\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand com = new SqlCommand();
         public Admin()
         {
             InitializeComponent();
         }
 
-        private void uName_TextChanged(object sender, EventArgs e)
-        {
-           if(uName.Text.Equals(@"Username"))
-            {
-                uName.Text = "";
-            }
-        }
-
-        private void txtUserLeave(object sender, EventArgs e)
-        {
-            if (uName.Text.Equals(""))
-            {
-                uName.Text = @"Username";
-            }
-        }
-
-        private void txtPassEnter(object sender, EventArgs e)
-        {
-            if(PWD.Text.Equals("Password"))
-            {
-                PWD.Text = "";
-
-            }
-        }
-
-        private void txtPassLeave(object sender, EventArgs e)
-        {
-            if (PWD.Text.Equals(""))
-            {
-                PWD.Text = "Password";
-
-            }
-        }
+     
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            /* con.Open();
-             con.Connection = con;
-             con.CommandText = "select * from ";
-             con.Close();*/
-            Register_Candidate rc = new Register_Candidate();
-            this.Hide();
-            rc.Show();
+            try
+            {
+                con.Open();
+                if (con != null)
+                {
+                    MessageBox.Show("Conn is sucess");
+                }
+                else {
+                    MessageBox.Show("Conn failed");
+                }
+            }
+            catch (Exception ef)
+            {
+
+                MessageBox.Show($"Error{ef}");
+            }
+              
         }
     }
 }
