@@ -36,10 +36,10 @@ namespace Vote_System
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.TNPF_radioBtn = new System.Windows.Forms.RadioButton();
+            this.TNA_radioBtn = new System.Windows.Forms.RadioButton();
+            this.SJB_Radiobtn = new System.Windows.Forms.RadioButton();
+            this.SPFA_radioBtn = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.logopanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -62,10 +62,10 @@ namespace Vote_System
             this.panel1.Controls.Add(this.iconPictureBox2);
             this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.radioButton4);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.TNPF_radioBtn);
+            this.panel1.Controls.Add(this.TNA_radioBtn);
+            this.panel1.Controls.Add(this.SJB_Radiobtn);
+            this.panel1.Controls.Add(this.SPFA_radioBtn);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(9, 109);
             this.panel1.Name = "panel1";
@@ -147,54 +147,57 @@ namespace Vote_System
             this.label2.TabIndex = 5;
             this.label2.Text = "Please Click the box of your preference";
             // 
-            // radioButton4
+            // TNPF_radioBtn
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(105, 206);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(211, 24);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Tamil National People\'s Front";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.TNPF_radioBtn.AutoSize = true;
+            this.TNPF_radioBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TNPF_radioBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TNPF_radioBtn.Location = new System.Drawing.Point(105, 206);
+            this.TNPF_radioBtn.Name = "TNPF_radioBtn";
+            this.TNPF_radioBtn.Size = new System.Drawing.Size(211, 24);
+            this.TNPF_radioBtn.TabIndex = 4;
+            this.TNPF_radioBtn.Text = "Tamil National People\'s Front";
+            this.TNPF_radioBtn.UseVisualStyleBackColor = true;
+            this.TNPF_radioBtn.CheckedChanged += new System.EventHandler(this.TNPF_radioBtn_CheckedChanged);
             // 
-            // radioButton3
+            // TNA_radioBtn
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(105, 286);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(171, 24);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Tamil National Alliance";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.TNA_radioBtn.AutoSize = true;
+            this.TNA_radioBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TNA_radioBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TNA_radioBtn.Location = new System.Drawing.Point(105, 286);
+            this.TNA_radioBtn.Name = "TNA_radioBtn";
+            this.TNA_radioBtn.Size = new System.Drawing.Size(171, 24);
+            this.TNA_radioBtn.TabIndex = 3;
+            this.TNA_radioBtn.Text = "Tamil National Alliance";
+            this.TNA_radioBtn.UseVisualStyleBackColor = true;
+            this.TNA_radioBtn.CheckedChanged += new System.EventHandler(this.TNA_radioBtn_CheckedChanged);
             // 
-            // radioButton2
+            // SJB_Radiobtn
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(105, 139);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(183, 24);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Samagi Jana Balawegaya";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.SJB_Radiobtn.AutoSize = true;
+            this.SJB_Radiobtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SJB_Radiobtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SJB_Radiobtn.Location = new System.Drawing.Point(105, 139);
+            this.SJB_Radiobtn.Name = "SJB_Radiobtn";
+            this.SJB_Radiobtn.Size = new System.Drawing.Size(183, 24);
+            this.SJB_Radiobtn.TabIndex = 2;
+            this.SJB_Radiobtn.Text = "Samagi Jana Balawegaya";
+            this.SJB_Radiobtn.UseVisualStyleBackColor = true;
+            this.SJB_Radiobtn.CheckedChanged += new System.EventHandler(this.SJB_Radiobtn_CheckedChanged);
             // 
-            // radioButton1
+            // SPFA_radioBtn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(105, 63);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(256, 24);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Sri Lanka People\'s Freedom Alliance";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.SPFA_radioBtn.AutoSize = true;
+            this.SPFA_radioBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SPFA_radioBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SPFA_radioBtn.Location = new System.Drawing.Point(105, 63);
+            this.SPFA_radioBtn.Name = "SPFA_radioBtn";
+            this.SPFA_radioBtn.Size = new System.Drawing.Size(256, 24);
+            this.SPFA_radioBtn.TabIndex = 1;
+            this.SPFA_radioBtn.Text = "Sri Lanka People\'s Freedom Alliance";
+            this.SPFA_radioBtn.UseVisualStyleBackColor = true;
+            this.SPFA_radioBtn.CheckedChanged += new System.EventHandler(this.SPFA_radioBtn_CheckedChanged);
             // 
             // label1
             // 
@@ -253,10 +256,10 @@ namespace Vote_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel logopanel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton TNPF_radioBtn;
+        private System.Windows.Forms.RadioButton TNA_radioBtn;
+        private System.Windows.Forms.RadioButton SJB_Radiobtn;
+        private System.Windows.Forms.RadioButton SPFA_radioBtn;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;

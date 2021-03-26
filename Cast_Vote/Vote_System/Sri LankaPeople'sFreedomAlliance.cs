@@ -12,7 +12,7 @@ namespace Vote_System
 {
     public partial class Sri_LankaPeople_sFreedomAlliance : Form
     {
-        Connection connection = new Connection();
+      
 
 
 
@@ -30,7 +30,7 @@ namespace Vote_System
 
         public void loadCandidates()
         {
-            String qry = "SELECT * FROM CANIDATES WHERE PARLIMENT_=";
+          
 
 
 

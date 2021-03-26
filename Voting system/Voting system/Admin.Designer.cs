@@ -118,7 +118,6 @@ namespace Voting_system
             this.PWD.Size = new System.Drawing.Size(247, 20);
             this.PWD.TabIndex = 1;
             this.PWD.Text = "Password";
-            
             // 
             // uName
             // 
@@ -128,7 +127,6 @@ namespace Voting_system
             this.uName.Size = new System.Drawing.Size(247, 20);
             this.uName.TabIndex = 0;
             this.uName.Text = "Username";
-          
             // 
             // Admin
             // 
