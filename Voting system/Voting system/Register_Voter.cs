@@ -66,6 +66,13 @@ namespace Voting_system
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            addf ad = new addf();
+            ad.Show();
+            this.Hide();
+        }
     }
 
     internal class Sqlconnection

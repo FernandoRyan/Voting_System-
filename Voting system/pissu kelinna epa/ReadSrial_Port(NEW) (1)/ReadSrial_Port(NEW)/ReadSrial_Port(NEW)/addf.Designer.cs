@@ -40,13 +40,11 @@
             this.serialPort2 = new System.IO.Ports.SerialPort(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ff = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.Party = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -122,23 +120,30 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.ff);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.Party);
             this.panel2.Location = new System.Drawing.Point(503, 96);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(363, 499);
             this.panel2.TabIndex = 11;
             // 
+            // ff
+            // 
+            this.ff.AutoSize = true;
+            this.ff.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ff.Location = new System.Drawing.Point(274, 11);
+            this.ff.Name = "ff";
+            this.ff.Size = new System.Drawing.Size(0, 37);
+            this.ff.TabIndex = 32;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(30, 207);
+            this.button1.Location = new System.Drawing.Point(37, 86);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(262, 28);
             this.button1.TabIndex = 31;
-            this.button1.Text = "Add Finger Print ";
+            this.button1.Text = "Refresh Fingerprint ID";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -147,33 +152,12 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(10, 99);
+            this.label3.Location = new System.Drawing.Point(-2, 16);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(241, 32);
+            this.label3.Size = new System.Drawing.Size(269, 32);
             this.label3.TabIndex = 30;
-            this.label3.Text = "Voter\'s Fingerprint ID";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(16, 56);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.MaxLength = 12;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(294, 26);
-            this.textBox2.TabIndex = 28;
-            // 
-            // Party
-            // 
-            this.Party.AutoSize = true;
-            this.Party.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Party.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Party.Location = new System.Drawing.Point(3, 14);
-            this.Party.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Party.Name = "Party";
-            this.Party.Size = new System.Drawing.Size(347, 32);
-            this.Party.TabIndex = 27;
-            this.Party.Text = "National Idemtity Card number";
+            this.label3.Text = "Voter\'s Fingerprint ID is:";
             // 
             // panel1
             // 
@@ -198,15 +182,6 @@
             this.label2.Size = new System.Drawing.Size(825, 67);
             this.label2.TabIndex = 12;
             this.label2.Text = "e-Voting fingerprint Registration";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 141);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "label4";
             // 
             // addf
             // 
@@ -244,10 +219,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label Party;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label ff;
     }
 }

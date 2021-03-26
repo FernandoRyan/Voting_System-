@@ -48,8 +48,8 @@ namespace Voting_system
                     }
                     else if (uName.Text == "Nethma" && PWD.Text == "Nethma12345")
                     {
-                        Register_Voter RV = new Register_Voter();
-                        RV.Show();
+                        addf ad = new addf();
+                        ad.Show();
                         this.Hide();
 
                     }
