@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(varifi));
             this.textBOX_Show_Read = new System.Windows.Forms.TextBox();
-            this.textBox_Send = new System.Windows.Forms.TextBox();
-            this.BTN_Send = new System.Windows.Forms.Button();
             this.BTN_Start = new System.Windows.Forms.Button();
             this.BTN_Stop = new System.Windows.Forms.Button();
             this.comboBox_Port = new System.Windows.Forms.ComboBox();
@@ -41,46 +39,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Party = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBOX_Show_Read
             // 
-            this.textBOX_Show_Read.Location = new System.Drawing.Point(4, 131);
+            this.textBOX_Show_Read.Location = new System.Drawing.Point(4, 89);
             this.textBOX_Show_Read.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBOX_Show_Read.Multiline = true;
             this.textBOX_Show_Read.Name = "textBOX_Show_Read";
-            this.textBOX_Show_Read.Size = new System.Drawing.Size(451, 335);
+            this.textBOX_Show_Read.Size = new System.Drawing.Size(451, 405);
             this.textBOX_Show_Read.TabIndex = 0;
-            // 
-            // textBox_Send
-            // 
-            this.textBox_Send.Location = new System.Drawing.Point(4, 46);
-            this.textBox_Send.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_Send.Name = "textBox_Send";
-            this.textBox_Send.Size = new System.Drawing.Size(330, 26);
-            this.textBox_Send.TabIndex = 1;
-            // 
-            // BTN_Send
-            // 
-            this.BTN_Send.Location = new System.Drawing.Point(345, 46);
-            this.BTN_Send.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BTN_Send.Name = "BTN_Send";
-            this.BTN_Send.Size = new System.Drawing.Size(112, 35);
-            this.BTN_Send.TabIndex = 2;
-            this.BTN_Send.Text = "Send";
-            this.BTN_Send.UseVisualStyleBackColor = true;
-            this.BTN_Send.Click += new System.EventHandler(this.BTN_Send_Click);
             // 
             // BTN_Start
             // 
-            this.BTN_Start.Location = new System.Drawing.Point(224, 86);
+            this.BTN_Start.Location = new System.Drawing.Point(222, 51);
             this.BTN_Start.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BTN_Start.Name = "BTN_Start";
             this.BTN_Start.Size = new System.Drawing.Size(112, 35);
@@ -91,7 +70,7 @@
             // 
             // BTN_Stop
             // 
-            this.BTN_Stop.Location = new System.Drawing.Point(345, 86);
+            this.BTN_Stop.Location = new System.Drawing.Point(343, 51);
             this.BTN_Stop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BTN_Stop.Name = "BTN_Stop";
             this.BTN_Stop.Size = new System.Drawing.Size(112, 35);
@@ -103,7 +82,7 @@
             // comboBox_Port
             // 
             this.comboBox_Port.FormattingEnabled = true;
-            this.comboBox_Port.Location = new System.Drawing.Point(4, 86);
+            this.comboBox_Port.Location = new System.Drawing.Point(2, 51);
             this.comboBox_Port.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox_Port.Name = "comboBox_Port";
             this.comboBox_Port.Size = new System.Drawing.Size(180, 28);
@@ -128,9 +107,7 @@
             // 
             this.panel1.Controls.Add(this.textBOX_Show_Read);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox_Send);
             this.panel1.Controls.Add(this.comboBox_Port);
-            this.panel1.Controls.Add(this.BTN_Send);
             this.panel1.Controls.Add(this.BTN_Stop);
             this.panel1.Controls.Add(this.BTN_Start);
             this.panel1.Location = new System.Drawing.Point(88, 90);
@@ -149,15 +126,14 @@
             this.panel2.Size = new System.Drawing.Size(363, 499);
             this.panel2.TabIndex = 8;
             // 
-            // label2
+            // button1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Museo 100", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(88, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(823, 67);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "e-Voting fingerprint Varification ";
+            this.button1.Location = new System.Drawing.Point(27, 118);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(262, 28);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Find Finger Print ID";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -192,16 +168,17 @@
             this.Party.TabIndex = 27;
             this.Party.Text = "National Idemtity Card number";
             // 
-            // button1
+            // label2
             // 
-            this.button1.Location = new System.Drawing.Point(27, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(262, 28);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Find Finger Print ID";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Museo 100", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(88, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(823, 67);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "e-Voting fingerprint Varification ";
             // 
-            // Form1
+            // varifi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -212,7 +189,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "varifi";
             this.Text = "e-Voting fingerprint Varification ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -227,8 +204,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBOX_Show_Read;
-        private System.Windows.Forms.TextBox textBox_Send;
-        private System.Windows.Forms.Button BTN_Send;
         private System.Windows.Forms.Button BTN_Start;
         private System.Windows.Forms.Button BTN_Stop;
         private System.Windows.Forms.ComboBox comboBox_Port;

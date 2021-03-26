@@ -60,26 +60,8 @@ namespace ReadSrial_Port_NEW_
 
         private void BTN_Send_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (serialPort1.IsOpen)
-                {
-                    //serialPort1.WriteLine(textBox_Send.Text + Environment.NewLine);
-                    //serialPort1.WriteLine(textBox_Send.Text.ToString());
-                    //serialPort1.WriteLine("ON");
-                    serialPort1.Write(textBox_Send.Text.ToString());
-                    //textBox1.AppendText("ON");
-                    //serialPort1.Write("ON");
-
-                    textBox_Send.Clear();
-                    textBOX_Show_Read.Text = serialPort1.ReadExisting();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           
             }
         }
     }
-}
+

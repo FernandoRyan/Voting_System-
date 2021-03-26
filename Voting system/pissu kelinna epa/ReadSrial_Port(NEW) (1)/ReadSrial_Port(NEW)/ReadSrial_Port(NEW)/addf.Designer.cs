@@ -40,13 +40,13 @@
             this.serialPort2 = new System.IO.Ports.SerialPort(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Party = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +86,7 @@
             this.BTN_Send.TabIndex = 2;
             this.BTN_Send.Text = "Send";
             this.BTN_Send.UseVisualStyleBackColor = true;
+            this.BTN_Send.Click += new System.EventHandler(this.BTN_Send_Click_1);
             // 
             // BTN_Stop
             // 
@@ -106,6 +107,7 @@
             this.BTN_Start.TabIndex = 3;
             this.BTN_Start.Text = "Start";
             this.BTN_Start.UseVisualStyleBackColor = true;
+            this.BTN_Start.Click += new System.EventHandler(this.BTN_Start_Click);
             // 
             // label1
             // 
@@ -129,6 +131,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(363, 499);
             this.panel2.TabIndex = 11;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 142);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.MaxLength = 12;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(294, 26);
+            this.textBox1.TabIndex = 32;
             // 
             // button1
             // 
@@ -197,15 +208,6 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "e-Voting fingerprint Registration";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 142);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.MaxLength = 12;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(294, 26);
-            this.textBox1.TabIndex = 32;
-            // 
             // addf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -218,6 +220,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "addf";
             this.Text = "e-Voting fingerprint Registration";
+            this.Load += new System.EventHandler(this.addf_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
