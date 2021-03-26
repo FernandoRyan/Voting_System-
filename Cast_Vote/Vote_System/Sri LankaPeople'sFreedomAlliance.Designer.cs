@@ -103,6 +103,7 @@ namespace Vote_System
             this.Controls.Add(this.logopanel);
             this.Name = "Sri_LankaPeople_sFreedomAlliance";
             this.Text = "Sri_LankaPeople_sFreedomAlliance";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.logopanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

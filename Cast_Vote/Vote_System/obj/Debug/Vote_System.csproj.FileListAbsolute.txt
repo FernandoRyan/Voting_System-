@@ -1,23 +1,14 @@
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\bin\Debug\Vote_System.exe.config
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\bin\Debug\Vote_System.exe
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\bin\Debug\Vote_System.pdb
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\obj\Debug\Vote_System.csprojAssemblyReference.cache
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\obj\Debug\Vote_System.Cast_Vote.resources
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\obj\Debug\Vote_System.Properties.Resources.resources
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\obj\Debug\Vote_System.Vote.resources
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\obj\Debug\Vote_System.csproj.GenerateResource.cache
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\obj\Debug\Vote_System.csproj.CoreCompileInputs.cache
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\obj\Debug\Vote_System.csproj.CopyComplete
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\obj\Debug\Vote_System.exe
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System-\Voting system\Cast_Vote\Vote_System\Vote_System\obj\Debug\Vote_System.pdb
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\bin\Debug\Vote_System.pdb
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\bin\Debug\Vote_System.exe.config
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\bin\Debug\Vote_System.exe
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\bin\Debug\Vote_System.pdb
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.csprojAssemblyReference.cache
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.Cast_Vote.resources
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.Properties.Resources.resources
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.Samagi_Jana_Balawegaya.resources
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.Sri_LankaPeople_sFreedomAlliance.resources
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.Tamil_National_Alliance.resources
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.Tamil_National_People_s_Front.resources
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.Vote.resources
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.csproj.GenerateResource.cache
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Cast_Vote\Vote_System\obj\Debug\Vote_System.csproj.CoreCompileInputs.cache

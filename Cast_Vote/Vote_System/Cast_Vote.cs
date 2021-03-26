@@ -17,9 +17,51 @@ namespace Vote_System
             InitializeComponent();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void SPFA_radioBtn_CheckedChanged(object sender, EventArgs e)
         {
+            if (SPFA_radioBtn.Checked)
+            {
 
+                Sri_LankaPeople_sFreedomAlliance SPFA = new Sri_LankaPeople_sFreedomAlliance();
+                SPFA.Show();
+                this.Hide();
+
+            }
+        }
+
+        private void SJB_Radiobtn_CheckedChanged(object sender, EventArgs e)
+        {
+            if (SJB_Radiobtn.Checked)
+            {
+
+                Samagi_Jana_Balawegaya SJB = new Samagi_Jana_Balawegaya();
+                SJB.Show();
+                this.Hide();
+
+            }
+        }
+
+        private void TNPF_radioBtn_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TNPF_radioBtn.Checked)
+            {
+
+                Tamil_National_People_s_Front TNPF = new Tamil_National_People_s_Front();
+                TNPF.Show();
+                this.Hide();
+            }
+        }
+
+        private void TNA_radioBtn_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TNA_radioBtn.Checked)
+            {
+
+                Tamil_National_Alliance TNA = new Tamil_National_Alliance();
+                TNA.Show();
+                this.Hide();
+
+            }
         }
     }
 }
