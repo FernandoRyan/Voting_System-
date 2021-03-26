@@ -39,12 +39,12 @@
             this.serialPort2 = new System.IO.Ports.SerialPort(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.ff = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -127,6 +127,16 @@
             this.panel2.Size = new System.Drawing.Size(363, 499);
             this.panel2.TabIndex = 14;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(43, 157);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(238, 155);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Countinue Registration";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // ff
             // 
             this.ff.AutoSize = true;
@@ -182,16 +192,6 @@
             this.label2.Size = new System.Drawing.Size(825, 67);
             this.label2.TabIndex = 15;
             this.label2.Text = "e-Voting fingerprint Registration";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(43, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(238, 155);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Countinue Registration";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // addf
             // 

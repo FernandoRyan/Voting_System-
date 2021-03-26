@@ -120,10 +120,15 @@ namespace Voting_system
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Register_Voter RV = new Register_Voter();
             RV.Show();
            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }
