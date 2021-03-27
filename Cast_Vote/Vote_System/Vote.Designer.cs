@@ -57,7 +57,7 @@ namespace Vote_System
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(221)))), ((int)(((byte)(203)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(105)))), ((int)(((byte)(142)))));
             this.panel1.Controls.Add(this.voten);
             this.panel1.Controls.Add(this.Vote_Btn);
             this.panel1.Location = new System.Drawing.Point(9, 109);
@@ -70,6 +70,7 @@ namespace Vote_System
             this.voten.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.voten.AutoSize = true;
             this.voten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voten.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.voten.Location = new System.Drawing.Point(334, 48);
             this.voten.Name = "voten";
             this.voten.Size = new System.Drawing.Size(112, 25);
@@ -79,6 +80,7 @@ namespace Vote_System
             // Vote_Btn
             // 
             this.Vote_Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Vote_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(221)))), ((int)(((byte)(203)))));
             this.Vote_Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Vote_Btn.BackgroundImage")));
             this.Vote_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Vote_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -89,8 +91,10 @@ namespace Vote_System
             this.Vote_Btn.Name = "Vote_Btn";
             this.Vote_Btn.Size = new System.Drawing.Size(304, 156);
             this.Vote_Btn.TabIndex = 0;
-            this.Vote_Btn.UseVisualStyleBackColor = true;
+            this.Vote_Btn.UseVisualStyleBackColor = false;
             this.Vote_Btn.Click += new System.EventHandler(this.Vote_Btn_Click);
+            this.Vote_Btn.MouseEnter += new System.EventHandler(this.Vote_Btn_MouseEnter);
+            this.Vote_Btn.MouseLeave += new System.EventHandler(this.Vote_Btn_MouseLeave);
             // 
             // panel2
             // 
