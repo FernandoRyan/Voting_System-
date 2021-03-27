@@ -17,6 +17,9 @@ namespace Voting_system
             InitializeComponent();
         }
 
-        
+        private void Content_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

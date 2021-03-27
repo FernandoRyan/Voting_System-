@@ -58,6 +58,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="addf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addf.Designer.cs">
+      <DependentUpon>addf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register_Candidate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="Election_Results.resx">
       <DependentUpon>Election_Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addf.resx">
+      <DependentUpon>addf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register_Candidate.resx">
       <DependentUpon>Register_Candidate.cs</DependentUpon>

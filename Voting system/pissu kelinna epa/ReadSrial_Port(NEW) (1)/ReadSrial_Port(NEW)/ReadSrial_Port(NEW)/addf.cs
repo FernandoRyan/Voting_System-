@@ -7,20 +7,49 @@ using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ReadSrial_Port_NEW_
 {
     public partial class addf : Form
+
     {
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Desktop\GitHub\Voting_System-\DB\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
         public addf()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
         }
 
+        private void af()
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT MAX(fingerprintID) FROM VoterTb";
+
+                var f = (string)cmd.ExecuteScalar();
+                int x=int.Parse(f);
+                x++;
+                ff.Text = x.ToString();
+                con.Close();
+                textBox_Send.Text= x.ToString();
+
+
+
+
+
+            }
+            catch (SqlException er)
+            {
+                MessageBox.Show($"Internal Error:{er}");
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            af();
         }
 
         private void addf_Load(object sender, EventArgs e)

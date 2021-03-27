@@ -8,17 +8,41 @@ using System.Text;
 using System.Windows.Forms;
 
 using System.IO.Ports;
+using System.Data.SqlClient;
 
 namespace ReadSrial_Port_NEW_
 {
+    
     public partial class varifi : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Desktop\GitHub\Voting_System-\DB\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
         public varifi()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
         }
 
+        private void vf()
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT fingerprintID FROM VoterTb WHERE NIC ='" + nictxt.Text + "' ";
+
+                var f = (string)cmd.ExecuteScalar();
+                fid.Text = f.ToString();
+                nictxt.Text = "";
+
+
+               
+            }
+            catch (SqlException er)
+            {
+                MessageBox.Show($"Internal Error:{er}");
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             String[] strPortName = SerialPort.GetPortNames();
@@ -62,6 +86,11 @@ namespace ReadSrial_Port_NEW_
         {
            
             }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            vf();
         }
+    }
     }
 
