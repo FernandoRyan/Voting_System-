@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addf));
             this.textBOX_Show_Read = new System.Windows.Forms.TextBox();
             this.textBox_Send = new System.Windows.Forms.TextBox();
             this.comboBox_Port = new System.Windows.Forms.ComboBox();
@@ -45,8 +46,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Signoutbtn = new FontAwesome.Sharp.IconButton();
+            this.Reportbtn = new FontAwesome.Sharp.IconButton();
+            this.logo = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBOX_Show_Read
@@ -117,16 +127,16 @@
             this.panel2.Controls.Add(this.ff);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(393, 74);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(539, 81);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(242, 324);
+            this.panel2.Size = new System.Drawing.Size(271, 324);
             this.panel2.TabIndex = 14;
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(29, 102);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 101);
             this.button2.TabIndex = 33;
@@ -147,7 +157,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(25, 56);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 42);
             this.button1.TabIndex = 31;
@@ -160,7 +170,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(-47, 10);
+            this.label3.Location = new System.Drawing.Point(25, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 21);
             this.label3.TabIndex = 30;
@@ -176,8 +186,8 @@
             this.panel1.Controls.Add(this.BTN_Send);
             this.panel1.Controls.Add(this.BTN_Stop);
             this.panel1.Controls.Add(this.BTN_Start);
-            this.panel1.Location = new System.Drawing.Point(73, 75);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(213, 81);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(312, 324);
             this.panel1.TabIndex = 13;
@@ -186,29 +196,117 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(73, 21);
+            this.label2.Location = new System.Drawing.Point(354, 23);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(557, 44);
+            this.label2.Size = new System.Drawing.Size(417, 44);
             this.label2.TabIndex = 15;
-            this.label2.Text = "e-Voting fingerprint Registration";
+            this.label2.Text = "Fingerprint Registration";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.logo);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(202, 421);
+            this.panel3.TabIndex = 19;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Location = new System.Drawing.Point(2, 162);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(197, 285);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.Signoutbtn);
+            this.panel5.Controls.Add(this.Reportbtn);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(197, 294);
+            this.panel5.TabIndex = 24;
+            // 
+            // Signoutbtn
+            // 
+            this.Signoutbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Signoutbtn.FlatAppearance.BorderSize = 0;
+            this.Signoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Signoutbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Signoutbtn.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.Signoutbtn.IconColor = System.Drawing.Color.Gainsboro;
+            this.Signoutbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Signoutbtn.IconSize = 33;
+            this.Signoutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Signoutbtn.Location = new System.Drawing.Point(0, 60);
+            this.Signoutbtn.Name = "Signoutbtn";
+            this.Signoutbtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.Signoutbtn.Size = new System.Drawing.Size(197, 60);
+            this.Signoutbtn.TabIndex = 22;
+            this.Signoutbtn.Text = "Log out";
+            this.Signoutbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Signoutbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Signoutbtn.UseVisualStyleBackColor = true;
+            // 
+            // Reportbtn
+            // 
+            this.Reportbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Reportbtn.FlatAppearance.BorderSize = 0;
+            this.Reportbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reportbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Reportbtn.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
+            this.Reportbtn.IconColor = System.Drawing.Color.Gainsboro;
+            this.Reportbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Reportbtn.IconSize = 33;
+            this.Reportbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Reportbtn.Location = new System.Drawing.Point(0, 0);
+            this.Reportbtn.Name = "Reportbtn";
+            this.Reportbtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.Reportbtn.Size = new System.Drawing.Size(197, 60);
+            this.Reportbtn.TabIndex = 21;
+            this.Reportbtn.Text = "Register Voter";
+            this.Reportbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Reportbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Reportbtn.UseVisualStyleBackColor = true;
+            // 
+            // logo
+            // 
+            this.logo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
+            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logo.Location = new System.Drawing.Point(3, 3);
+            this.logo.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(196, 95);
+            this.logo.TabIndex = 1;
             // 
             // addf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(111)))));
-            this.ClientSize = new System.Drawing.Size(708, 421);
+            this.ClientSize = new System.Drawing.Size(821, 421);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addf";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +330,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private FontAwesome.Sharp.IconButton Signoutbtn;
+        private FontAwesome.Sharp.IconButton Reportbtn;
+        private System.Windows.Forms.Panel logo;
     }
 }

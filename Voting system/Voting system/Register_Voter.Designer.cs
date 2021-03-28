@@ -32,7 +32,6 @@ namespace Voting_system
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register_Voter));
             this.logo = new System.Windows.Forms.Panel();
             this.Content = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.gntxt = new System.Windows.Forms.TextBox();
@@ -48,8 +47,17 @@ namespace Voting_system
             this.VTRname = new System.Windows.Forms.TextBox();
             this.Submitbtn = new FontAwesome.Sharp.IconButton();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Signoutbtn = new FontAwesome.Sharp.IconButton();
+            this.Registerbtn = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Content.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // logo
@@ -58,16 +66,15 @@ namespace Voting_system
             this.logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(111)))));
             this.logo.BackgroundImage = global::Voting_system.Properties.Resources.election;
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.logo.Location = new System.Drawing.Point(1, 1);
+            this.logo.Location = new System.Drawing.Point(208, 1);
             this.logo.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(798, 126);
+            this.logo.Size = new System.Drawing.Size(591, 126);
             this.logo.TabIndex = 1;
             // 
             // Content
             // 
             this.Content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(111)))));
-            this.Content.Controls.Add(this.button2);
             this.Content.Controls.Add(this.button1);
             this.Content.Controls.Add(this.label2);
             this.Content.Controls.Add(this.gntxt);
@@ -82,26 +89,16 @@ namespace Voting_system
             this.Content.Controls.Add(this.CDmName);
             this.Content.Controls.Add(this.VTRname);
             this.Content.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Content.Location = new System.Drawing.Point(1, 159);
+            this.Content.Location = new System.Drawing.Point(205, 148);
             this.Content.Name = "Content";
-            this.Content.Size = new System.Drawing.Size(631, 589);
+            this.Content.Size = new System.Drawing.Size(594, 589);
             this.Content.TabIndex = 2;
             this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 15);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(423, 476);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(168, 527);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 39);
             this.button1.TabIndex = 29;
@@ -232,7 +229,7 @@ namespace Voting_system
             this.Submitbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Submitbtn.IconSize = 22;
             this.Submitbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Submitbtn.Location = new System.Drawing.Point(706, 717);
+            this.Submitbtn.Location = new System.Drawing.Point(706, 979);
             this.Submitbtn.Name = "Submitbtn";
             this.Submitbtn.Size = new System.Drawing.Size(93, 31);
             this.Submitbtn.TabIndex = 13;
@@ -244,12 +241,96 @@ namespace Voting_system
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(202, 749);
+            this.panel2.TabIndex = 19;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Location = new System.Drawing.Point(2, 162);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(197, 285);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.Signoutbtn);
+            this.panel5.Controls.Add(this.Registerbtn);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(197, 575);
+            this.panel5.TabIndex = 24;
+            // 
+            // Signoutbtn
+            // 
+            this.Signoutbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Signoutbtn.FlatAppearance.BorderSize = 0;
+            this.Signoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Signoutbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Signoutbtn.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.Signoutbtn.IconColor = System.Drawing.Color.Gainsboro;
+            this.Signoutbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Signoutbtn.IconSize = 33;
+            this.Signoutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Signoutbtn.Location = new System.Drawing.Point(0, 60);
+            this.Signoutbtn.Name = "Signoutbtn";
+            this.Signoutbtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.Signoutbtn.Size = new System.Drawing.Size(197, 60);
+            this.Signoutbtn.TabIndex = 22;
+            this.Signoutbtn.Text = "Log out";
+            this.Signoutbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Signoutbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Signoutbtn.UseVisualStyleBackColor = true;
+            // 
+            // Registerbtn
+            // 
+            this.Registerbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Registerbtn.FlatAppearance.BorderSize = 0;
+            this.Registerbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Registerbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Registerbtn.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
+            this.Registerbtn.IconColor = System.Drawing.Color.Gainsboro;
+            this.Registerbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Registerbtn.IconSize = 33;
+            this.Registerbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Registerbtn.Location = new System.Drawing.Point(0, 0);
+            this.Registerbtn.Name = "Registerbtn";
+            this.Registerbtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.Registerbtn.Size = new System.Drawing.Size(197, 60);
+            this.Registerbtn.TabIndex = 21;
+            this.Registerbtn.Text = "Register voter";
+            this.Registerbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Registerbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Registerbtn.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(196, 95);
+            this.panel1.TabIndex = 1;
+            // 
             // Register_Voter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(111)))));
-            this.ClientSize = new System.Drawing.Size(800, 487);
+            this.ClientSize = new System.Drawing.Size(800, 749);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.Content);
             this.Controls.Add(this.logo);
@@ -260,6 +341,9 @@ namespace Voting_system
             this.Content.ResumeLayout(false);
             this.Content.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -283,6 +367,11 @@ namespace Voting_system
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox gntxt;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
+        private FontAwesome.Sharp.IconButton Signoutbtn;
+        private FontAwesome.Sharp.IconButton Registerbtn;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -70,9 +70,6 @@ namespace Voting_system
             login();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
     }
 }
