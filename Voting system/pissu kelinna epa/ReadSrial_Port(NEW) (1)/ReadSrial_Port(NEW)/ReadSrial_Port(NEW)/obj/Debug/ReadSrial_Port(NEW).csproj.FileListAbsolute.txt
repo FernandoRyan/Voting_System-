@@ -27,3 +27,14 @@ D:\Desktop\GitHub\Voting_System-\Voting system\pissu kelinna epa\ReadSrial_Port(
 D:\Desktop\GitHub\Voting_System-\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csproj.CoreCompileInputs.cache
 D:\Desktop\GitHub\Voting_System-\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).exe
 D:\Desktop\GitHub\Voting_System-\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).pdb
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\bin\Debug\ReadSrial_Port(NEW).exe
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\bin\Debug\ReadSrial_Port(NEW).pdb
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csprojAssemblyReference.cache
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.addf.resources
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.varifi.resources
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.log_in.resources
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.Properties.Resources.resources
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csproj.GenerateResource.cache
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csproj.CoreCompileInputs.cache
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).exe
+C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu kelinna epa\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).pdb
