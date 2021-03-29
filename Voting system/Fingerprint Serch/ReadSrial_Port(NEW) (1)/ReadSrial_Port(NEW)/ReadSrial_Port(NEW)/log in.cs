@@ -32,8 +32,8 @@ namespace ReadSrial_Port_NEW_
                 {
                     if (uName.Text == "Nethma" && PWD.Text == "Nethma12345")
                     {
-                        varifi ve = new varifi();
-                        ve.Show();
+                        QR_Reader qr = new QR_Reader();
+                        qr.Show();
                         this.Hide();
 
                     }

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 using System.IO.Ports;
 using System.Data.SqlClient;
+using System.Media;
 
 namespace ReadSrial_Port_NEW_
 {
@@ -16,10 +17,19 @@ namespace ReadSrial_Port_NEW_
     public partial class varifi : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Desktop\GitHub\Voting_System-\DB\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
-        public varifi()
+        public varifi( )
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
+            nictxt.Text = QR_Reader.nic;
+            //setNIC();
+        }
+
+        public void setNIC() {
+            QR_Reader r = new QR_Reader();
+            string nic=r.getNic();
+
+            nictxt.Text = nic;
         }
 
         private void vf()
@@ -91,6 +101,17 @@ namespace ReadSrial_Port_NEW_
         private void button1_Click(object sender, EventArgs e)
         {
             vf();
+        }
+
+        private void nictxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            QR_Reader r = new QR_Reader();
+            r.Show();
         }
     }
     }
