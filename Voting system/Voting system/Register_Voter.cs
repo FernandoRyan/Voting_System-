@@ -28,13 +28,20 @@ namespace Voting_system
                 cmd.CommandText = "insert into VoterTb(NIC,name,DOB,fingerprintID,telephone,GND)  values ('" + nictxt.Text + "','" + VTRname.Text + "','" + dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "','" + idtxt.Text + "','" + tptxt.Text + "', '" + gntxt.Text + "')";
                 cmd.ExecuteNonQuery();
                 con.Close();
-                
+                nictxt.Text = "";
+                VTRname.Text = "";
+                dateTimePicker1.Value = DateTime.Now;
+                idtxt.Text = "";
+                tptxt.Text = "";
+                gntxt.Text = "";
                 MessageBox.Show(" Voter Registerd Successfully ");
             }
             catch(SqlException er)
             {
                 MessageBox.Show($"Internal Error:{er}");
             }
+           
+
         }
 
         private void label1_Click(object sender, EventArgs e)
