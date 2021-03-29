@@ -23,5 +23,15 @@ namespace Vote_System
             cv.Show();
             this.Hide();
         }
+
+        private void Vote_Btn_MouseEnter(object sender, EventArgs e)
+        {
+            Vote_Btn.BackColor = Color.FromArgb(3, 80, 111);
+        }
+
+        private void Vote_Btn_MouseLeave(object sender, EventArgs e)
+        {
+            Vote_Btn.BackColor = Color.FromArgb(163, 221, 203);
+        }
     }
 }

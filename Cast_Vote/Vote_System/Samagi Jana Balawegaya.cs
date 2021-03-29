@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using MySql.Data.MySqlClient;
 
 namespace Vote_System
 {
@@ -16,7 +17,8 @@ namespace Vote_System
     {
 
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryana\OneDrive\Documents\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
-        CheckedListBox checklist = new CheckedListBox();
+        string connectionstring= (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryana\OneDrive\Documents\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
+        int count = 0;
         public Samagi_Jana_Balawegaya()
         {
             InitializeComponent();
@@ -28,25 +30,24 @@ namespace Vote_System
 
 
         /*
-         The method for getting all candidates of samagi jana balawegaya party
+         The method for getting all candidates of samagi jana balawegaya
+        party into a grid view for voting purposes
          */
         private void loadCandidates()
         {
 
-            //   int count = countCandidates();
-
-            String qry = "SELECT full_name , candidate_no FROM candidate_tb WHERE party ='Samagi Jana Balawegaya'";
+            String qry = "SELECT CandidateNumber FROM candidate_tb WHERE party ='Samagi Jana Balawegaya'";
             try
             {
                 conn.Open();
-                SqlDataAdapter SDA = new SqlDataAdapter(qry,conn);
+                SqlDataAdapter SDA = new SqlDataAdapter(qry, conn);
                 SqlCommandBuilder objSqlCommandBuilder = new SqlCommandBuilder(SDA);
                 DataTable objDataTable = new DataTable();
                 SDA.Fill(objDataTable);
                 BindingSource objBindingSource = new BindingSource();
                 objBindingSource.DataSource = objDataTable;
                 dataGridView1.DataSource = objBindingSource;
-              
+
                 SDA.Update(objDataTable);
                 conn.Close();
 
@@ -59,28 +60,66 @@ namespace Vote_System
             }
         }
 
-       
+
+        /*Adding a method to include checkbox in datagridview */
+
         private void Samagi_Jana_Balawegaya_Load(object sender, EventArgs e)
         {
-          
-            
+
+
             DataGridViewCheckBoxColumn chkbox = new DataGridViewCheckBoxColumn();
             chkbox.HeaderText = "";
             chkbox.Width = 30;
             chkbox.Name = "checkboxcolumn";
             chkbox.ReadOnly = false;
-            dataGridView1.Columns.Insert(0,chkbox);
+            dataGridView1.Columns.Insert(0, chkbox);
             DataGridViewColumn column = dataGridView1.Columns[1];
-            column.Width = 200;
+            column.Width = 450;
+            DataGridViewColumn column1 = dataGridView1.Columns[0];
+            column1.Width = 50;
+
 
         }
 
+        /*button where voting happpens*/
         private void iconButton1_Click(object sender, EventArgs e)
         {
-           int count = 0;
 
+            countVotes();//method for counting how many checkbox were checked 
 
-            foreach (DataGridViewRow dr in dataGridView1.Rows) {
+            if (count < 1)
+            {
+                MessageBox.Show("Please select a candidate to vote");
+                return;
+            }
+            else
+            {
+
+                foreach (DataGridViewRow dr in dataGridView1.Rows)
+                {
+
+                    bool checkedbox = Convert.ToBoolean(dr.Cells["checkboxcolumn"].Value);
+                    if (checkedbox == true && count < 3)
+                    {
+                        insertRecords();//Calling method for insertion data to database
+                    }
+                }
+
+            }
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Cast_Vote cv = new Cast_Vote();
+            cv.Show();
+            this.Hide();
+        }
+
+        private void countVotes()
+        {
+
+            foreach (DataGridViewRow dr in dataGridView1.Rows)
+            {
 
                 bool checkedbox = Convert.ToBoolean(dr.Cells["checkboxcolumn"].Value);
 
@@ -89,53 +128,111 @@ namespace Vote_System
 
                     count++;
 
-                    if (count >= 3)
+                    if (count > 3)
                     {
 
                         MessageBox.Show($"Number of allowed voting exceeded only 3 voting allowed :{count}");
                         return;
                     }
+
                 }
             }
+
+        }
+
+        private void insertRecords()
+        {
+
 
             foreach (DataGridViewRow dr in dataGridView1.Rows)
             {
 
-                bool checkedbox = Convert.ToBoolean(dr.Cells["checkboxcolumn"].Value);
-                if (checkedbox==true && count<3)
-                {
-              
 
-                    string qry = "INSERT INTO Results (candidate_name,party,Results) VALUES(@candidate_name,@party,@Results)";
+
+                using(var conn1 = new SqlConnection(connectionstring))
                     try
                     {
-                        conn.Open();
-                        SqlCommand cmd = new SqlCommand(qry, conn);
+                        conn1.Open();
+                        
+                        string query = "SELECT COUNT(*) FROM Results WHERE CandidateNumber=@no";
+                        SqlCommand cmd = new SqlCommand(query, conn1);
 
-                        cmd.Parameters.AddWithValue("@candidate_name", dr.Cells[1].Value);
-                        cmd.Parameters.AddWithValue("@party", "Samagi Jana Balawegaya");
-                        cmd.Parameters.AddWithValue("@Results", 1);
-                        cmd.ExecuteNonQuery();
-                        conn.Close();
-                        MessageBox.Show("Voted sucessfully");
+                        cmd.Parameters.AddWithValue("@no", dr.Cells[1].Value);
+                   
+
+                    using (cmd)
+                        {
+                            int rowsAmount = (int)cmd.ExecuteScalar(); // get the value of the count
+                            if (rowsAmount > 0)
+                            {
+                                string Update = "update Results set Results=Results+1";
+                                SqlCommand cmd1 = new SqlCommand(Update, conn1);
+                                cmd1.ExecuteNonQuery();
+                            }
+                            else
+                            {
+
+                                string qry = "INSERT INTO Results (CandidateNumber,party,Results) VALUES(@CandidateNumber,@party,@Results)";
+                                try
+                                {
+
+                                    SqlCommand cmd2 = new SqlCommand(qry, conn1);
+
+                                    cmd2.Parameters.AddWithValue("@CandidateNumber", dr.Cells[1].Value);
+                                    cmd2.Parameters.AddWithValue("@party", "Samagi Jana Balawegaya");
+                                    cmd2.Parameters.AddWithValue("@Results", 1);
+                                    cmd2.ExecuteNonQuery();
+                                    conn1.Close();
+                                    MessageBox.Show("Voted sucessfully");
+                                    
+
+                            }
+                                catch (SqlException es)
+                                {
+
+                                    MessageBox.Show($"{es}");
+                                }
+                                finally
+                                {
+                                    Vote cs = new Vote();
+                                    cs.Show();
+                                    this.Close();
+                                
+                                }
+                            }
+
+                        }
+
+
                     }
+
                     catch (SqlException es)
                     {
-
-                        MessageBox.Show($"{es}");
+                        MessageBox.Show($"Error: {es}");
                     }
                 }
-                    
-                }
-
 
             }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+        private void votebtn_MouseEnter(object sender, EventArgs e)
         {
-            Cast_Vote cv = new Cast_Vote();
-            cv.Show();
-            this.Hide();
+            votebtn.BackColor = Color.FromArgb(15, 48, 87);
+        }
+
+        private void votebtn_MouseLeave(object sender, EventArgs e)
+        {
+            votebtn.BackColor = Color.FromArgb(3, 80, 111);
+        }
+
+        private void iconButton2_MouseEnter(object sender, EventArgs e)
+        {
+            iconButton2.BackColor = Color.FromArgb(15, 48, 87);
+        }
+
+        private void iconButton2_MouseLeave(object sender, EventArgs e)
+        {
+                        votebtn.BackColor = Color.FromArgb(3, 80, 111);
+
         }
     }
     }

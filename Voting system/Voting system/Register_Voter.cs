@@ -73,6 +73,8 @@ namespace Voting_system
             ad.Show();
             this.Hide();
         }
+
+        
     }
 
     internal class Sqlconnection

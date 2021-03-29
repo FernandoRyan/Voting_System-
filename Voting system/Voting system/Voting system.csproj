@@ -41,6 +41,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +65,12 @@
     <Compile Include="addf.Designer.cs">
       <DependentUpon>addf.cs</DependentUpon>
     </Compile>
+    <Compile Include="CandidateResultsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CandidateResultsInfo.Designer.cs">
+      <DependentUpon>CandidateResultsInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register_Candidate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +91,9 @@
     <Compile Include="Election_Results.Designer.cs">
       <DependentUpon>Election_Results.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CandidateResultsInfo.resx">
+      <DependentUpon>CandidateResultsInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Election_Results.resx">
       <DependentUpon>Election_Results.cs</DependentUpon>
     </EmbeddedResource>
