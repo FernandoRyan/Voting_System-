@@ -17,13 +17,14 @@ namespace Voting_system
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryana\OneDrive\Documents\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
         string candidateno;
         int noOfVoted = 0;
-        string noOfVoterRegistered;
+        int noOfVoterRegistered = 0;
         public CandidateResultsInfo()
         {
             InitializeComponent();
             electionWinner();
             countrows();
             registeredVoters();
+            Notvotered();
         }
 
         /*Method for getting winner details*/
@@ -124,17 +125,21 @@ namespace Voting_system
 
             try
             {
-                conn.Open();
-                string qry = "SELECT MAX(number) FROM VoterTb";
-                SqlCommand cmd = new SqlCommand(qry, conn);
-                SqlDataReader DR1 = cmd.ExecuteReader();
-                if (DR1.Read())
+              
+                string qry = "SELECT COUNT(*) FROM VoterTb";
+
+                int count = 0;
+                using (SqlConnection thisConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryana\OneDrive\Documents\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30"))
                 {
-                    noOfVoterRegistered = DR1.GetValue(0).ToString();
-                    registeredVoterLbl.Text = DR1.GetValue(0).ToString();
-
-
+                    using (SqlCommand cmdCount = new SqlCommand(qry, thisConnection))
+                    {
+                        thisConnection.Open();
+                        count = (int)cmdCount.ExecuteScalar();
+                        noOfVoterRegistered = count;
+                        registeredVoterLbl.Text = count.ToString();
+                    }
                 }
+
             }
             catch (SqlException es)
             {
@@ -152,9 +157,9 @@ namespace Voting_system
         }
 
         private void Notvotered() {
-            int i = int.Parse(noOfVoterRegistered);
-            int count = i - noOfVoted;
-            UnvotedLbls.Text = count.ToString();
+           
+            int count = noOfVoterRegistered - noOfVoted;
+            Unvotedlbla.Text = count.ToString();
 
 
         }

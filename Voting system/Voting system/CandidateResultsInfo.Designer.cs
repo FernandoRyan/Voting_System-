@@ -32,7 +32,7 @@ namespace Voting_system
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CandidateResultsInfo));
             this.logo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.UnvotedLbls = new System.Windows.Forms.Label();
+            this.Unvotedlbla = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.voterslbl = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -69,7 +69,7 @@ namespace Voting_system
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(105)))), ((int)(((byte)(142)))));
-            this.panel1.Controls.Add(this.UnvotedLbls);
+            this.panel1.Controls.Add(this.Unvotedlbla);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.voterslbl);
             this.panel1.Controls.Add(this.label6);
@@ -82,15 +82,15 @@ namespace Voting_system
             this.panel1.Size = new System.Drawing.Size(561, 298);
             this.panel1.TabIndex = 3;
             // 
-            // UnvotedLbls
+            // Unvotedlbla
             // 
-            this.UnvotedLbls.AutoSize = true;
-            this.UnvotedLbls.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnvotedLbls.Location = new System.Drawing.Point(253, 176);
-            this.UnvotedLbls.Name = "UnvotedLbls";
-            this.UnvotedLbls.Size = new System.Drawing.Size(76, 25);
-            this.UnvotedLbls.TabIndex = 8;
-            this.UnvotedLbls.Text = "label8";
+            this.Unvotedlbla.AutoSize = true;
+            this.Unvotedlbla.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Unvotedlbla.Location = new System.Drawing.Point(253, 176);
+            this.Unvotedlbla.Name = "Unvotedlbla";
+            this.Unvotedlbla.Size = new System.Drawing.Size(76, 25);
+            this.Unvotedlbla.TabIndex = 8;
+            this.Unvotedlbla.Text = "label8";
             // 
             // label7
             // 
@@ -302,7 +302,7 @@ namespace Voting_system
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label winnerlbl;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label UnvotedLbls;
+        private System.Windows.Forms.Label Unvotedlbla;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label voterslbl;
         private System.Windows.Forms.Label label6;

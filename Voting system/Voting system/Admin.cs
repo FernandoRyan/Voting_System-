@@ -46,7 +46,7 @@ namespace Voting_system
                         RC.Show();
                         this.Hide();
                     }
-                    else if (uName.Text == "Nethma" && PWD.Text == "Nethma12345")
+                    else if (uName.Text == "NETHMA" && PWD.Text == "Nethma12345")
                     {
                         addf ad = new addf();
                         ad.Show();

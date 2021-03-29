@@ -29,6 +29,7 @@ namespace Voting_system
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.logo = new System.Windows.Forms.Panel();
@@ -37,6 +38,7 @@ namespace Voting_system
             this.lgAdmin = new System.Windows.Forms.PictureBox();
             this.PWD = new System.Windows.Forms.TextBox();
             this.uName = new System.Windows.Forms.TextBox();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.panel1.SuspendLayout();
             this.Cntpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lgAdmin)).BeginInit();
@@ -50,10 +52,9 @@ namespace Voting_system
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(111)))));
             this.panel1.Controls.Add(this.logo);
             this.panel1.Controls.Add(this.Cntpanel);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1208, 711);
+            this.panel1.Size = new System.Drawing.Size(805, 462);
             this.panel1.TabIndex = 0;
             // 
             // logo
@@ -62,10 +63,10 @@ namespace Voting_system
             this.logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(111)))));
             this.logo.BackgroundImage = global::Voting_system.Properties.Resources.election;
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.logo.Location = new System.Drawing.Point(33, 5);
-            this.logo.Margin = new System.Windows.Forms.Padding(4, 5, 3, 5);
+            this.logo.Location = new System.Drawing.Point(22, 3);
+            this.logo.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(1148, 162);
+            this.logo.Size = new System.Drawing.Size(765, 105);
             this.logo.TabIndex = 3;
             // 
             // Cntpanel
@@ -78,10 +79,9 @@ namespace Voting_system
             this.Cntpanel.Controls.Add(this.lgAdmin);
             this.Cntpanel.Controls.Add(this.PWD);
             this.Cntpanel.Controls.Add(this.uName);
-            this.Cntpanel.Location = new System.Drawing.Point(33, 175);
-            this.Cntpanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Cntpanel.Location = new System.Drawing.Point(22, 114);
             this.Cntpanel.Name = "Cntpanel";
-            this.Cntpanel.Size = new System.Drawing.Size(1148, 497);
+            this.Cntpanel.Size = new System.Drawing.Size(765, 323);
             this.Cntpanel.TabIndex = 2;
             // 
             // LoginBtn
@@ -92,10 +92,9 @@ namespace Voting_system
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LoginBtn.Location = new System.Drawing.Point(441, 329);
-            this.LoginBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LoginBtn.Location = new System.Drawing.Point(294, 214);
             this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(212, 65);
+            this.LoginBtn.Size = new System.Drawing.Size(141, 42);
             this.LoginBtn.TabIndex = 3;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
@@ -105,10 +104,9 @@ namespace Voting_system
             // 
             this.lgAdmin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lgAdmin.Image = global::Voting_system.Properties.Resources.Admin;
-            this.lgAdmin.Location = new System.Drawing.Point(474, 49);
-            this.lgAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lgAdmin.Location = new System.Drawing.Point(316, 32);
             this.lgAdmin.Name = "lgAdmin";
-            this.lgAdmin.Size = new System.Drawing.Size(150, 106);
+            this.lgAdmin.Size = new System.Drawing.Size(100, 69);
             this.lgAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.lgAdmin.TabIndex = 2;
             this.lgAdmin.TabStop = false;
@@ -116,33 +114,36 @@ namespace Voting_system
             // PWD
             // 
             this.PWD.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PWD.Location = new System.Drawing.Point(362, 275);
-            this.PWD.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PWD.Location = new System.Drawing.Point(241, 179);
             this.PWD.Name = "PWD";
             this.PWD.PasswordChar = '*';
-            this.PWD.Size = new System.Drawing.Size(368, 26);
+            this.PWD.Size = new System.Drawing.Size(247, 20);
             this.PWD.TabIndex = 1;
             this.PWD.Text = "Password";
+            this.PWD.UseSystemPasswordChar = true;
             // 
             // uName
             // 
             this.uName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.uName.Location = new System.Drawing.Point(362, 222);
-            this.uName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uName.Location = new System.Drawing.Point(241, 144);
             this.uName.Name = "uName";
-            this.uName.Size = new System.Drawing.Size(368, 26);
+            this.uName.Size = new System.Drawing.Size(247, 20);
             this.uName.TabIndex = 0;
             this.uName.Text = "Username";
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
@@ -164,6 +165,7 @@ namespace Voting_system
         private System.Windows.Forms.TextBox PWD;
         private System.Windows.Forms.TextBox uName;
         private System.Windows.Forms.Panel logo;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 
