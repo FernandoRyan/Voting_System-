@@ -41,7 +41,6 @@ C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\pissu ke
 D:\Desktop\GitHub\Voting_System-\Voting system\Fingerprint Serch\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\bin\Debug\ReadSrial_Port(NEW).exe
 D:\Desktop\GitHub\Voting_System-\Voting system\Fingerprint Serch\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\bin\Debug\ReadSrial_Port(NEW).pdb
 D:\Desktop\GitHub\Voting_System-\Voting system\Fingerprint Serch\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port(NEW).csprojAssemblyReference.cache
-D:\Desktop\GitHub\Voting_System-\Voting system\Fingerprint Serch\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.addf.resources
 D:\Desktop\GitHub\Voting_System-\Voting system\Fingerprint Serch\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.varifi.resources
 D:\Desktop\GitHub\Voting_System-\Voting system\Fingerprint Serch\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.log_in.resources
 D:\Desktop\GitHub\Voting_System-\Voting system\Fingerprint Serch\ReadSrial_Port(NEW) (1)\ReadSrial_Port(NEW)\ReadSrial_Port(NEW)\obj\Debug\ReadSrial_Port_NEW_.Properties.Resources.resources
