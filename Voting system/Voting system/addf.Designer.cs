@@ -141,16 +141,16 @@
             // 
             this.ff.AutoSize = true;
             this.ff.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ff.Location = new System.Drawing.Point(274, 11);
+            this.ff.Location = new System.Drawing.Point(310, 11);
             this.ff.Name = "ff";
             this.ff.Size = new System.Drawing.Size(0, 37);
             this.ff.TabIndex = 32;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(37, 86);
+            this.button1.Location = new System.Drawing.Point(37, 92);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(262, 28);
+            this.button1.Size = new System.Drawing.Size(262, 44);
             this.button1.TabIndex = 31;
             this.button1.Text = "Refresh Fingerprint ID";
             this.button1.UseVisualStyleBackColor = true;
@@ -161,7 +161,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(-70, 16);
+            this.label3.Location = new System.Drawing.Point(-4, 16);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(269, 32);
