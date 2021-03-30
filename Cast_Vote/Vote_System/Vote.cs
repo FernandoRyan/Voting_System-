@@ -19,8 +19,8 @@ namespace Vote_System
 
         private void Vote_Btn_Click(object sender, EventArgs e)
         {
-            Cast_Vote cv = new Cast_Vote();
-            cv.Show();
+            QR_Reader qr = new QR_Reader();
+            qr.Show();
             this.Hide();
         }
 
