@@ -112,6 +112,7 @@ namespace ReadSrial_Port_NEW_
         {
             QR_Reader r = new QR_Reader();
             r.Show();
+            this.Hide();
         }
     }
     }

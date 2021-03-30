@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.fid = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.nictxt = new System.Windows.Forms.TextBox();
             this.Party = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -112,7 +112,7 @@
             this.panel1.Controls.Add(this.BTN_Stop);
             this.panel1.Controls.Add(this.BTN_Start);
             this.panel1.Location = new System.Drawing.Point(59, 58);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(312, 324);
             this.panel1.TabIndex = 7;
@@ -128,10 +128,20 @@
             this.panel2.Controls.Add(this.nictxt);
             this.panel2.Controls.Add(this.Party);
             this.panel2.Location = new System.Drawing.Point(379, 58);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(242, 324);
             this.panel2.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(22, 62);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(175, 24);
+            this.button2.TabIndex = 35;
+            this.button2.Text = "QR Scanner";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -167,7 +177,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(22, 102);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 27);
             this.button1.TabIndex = 31;
@@ -217,16 +227,6 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "e-Voting fingerprint Varification ";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(22, 62);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 24);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Get Value";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // varifi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,6 +237,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "varifi";
             this.Text = "e-Voting fingerprint Varification ";
             this.Load += new System.EventHandler(this.Form1_Load);
