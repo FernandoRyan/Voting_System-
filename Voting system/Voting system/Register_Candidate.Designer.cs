@@ -263,6 +263,7 @@ namespace Voting_system
             this.Signoutbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Signoutbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Signoutbtn.UseVisualStyleBackColor = true;
+            this.Signoutbtn.Click += new System.EventHandler(this.Signoutbtn_Click);
             // 
             // Reportbtn
             // 

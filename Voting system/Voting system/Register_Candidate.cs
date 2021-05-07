@@ -21,5 +21,12 @@ namespace Voting_system
         {
 
         }
+
+        private void Signoutbtn_Click(object sender, EventArgs e)
+        {
+            Admin A = new Admin();
+            A.Show();
+            this.Close();
+        }
     }
 }

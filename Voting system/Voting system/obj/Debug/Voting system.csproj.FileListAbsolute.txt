@@ -34,3 +34,21 @@ D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting_sy
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\Voting system\obj\Debug\Voting_system.addf.resources
 C:\Users\ryana\OneDrive\Desktop\Vote system\Voting_System\Voting system\Voting system\obj\Debug\Voting_system.CandidateResultsInfo.resources
 D:\Desktop\GitHub\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.CandidateResultsInfo.resources
+E:\integrating Project\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe.config
+E:\integrating Project\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.exe
+E:\integrating Project\Voting_System-\Voting system\Voting system\bin\Debug\Voting system.pdb
+E:\integrating Project\Voting_System-\Voting system\Voting system\bin\Debug\FontAwesome.Sharp.dll
+E:\integrating Project\Voting_System-\Voting system\Voting system\bin\Debug\FontAwesome.Sharp.Pro.dll
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csprojAssemblyReference.cache
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.CandidateResultsInfo.resources
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Election_Results.resources
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.addf.resources
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Register_Candidate.resources
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Register_Voter.resources
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Admin.resources
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting_system.Properties.Resources.resources
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.GenerateResource.cache
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.CoreCompileInputs.cache
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.csproj.CopyComplete
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.exe
+E:\integrating Project\Voting_System-\Voting system\Voting system\obj\Debug\Voting system.pdb
