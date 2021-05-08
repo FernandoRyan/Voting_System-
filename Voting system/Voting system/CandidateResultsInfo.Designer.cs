@@ -88,9 +88,8 @@ namespace Voting_system
             this.Unvotedlbla.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Unvotedlbla.Location = new System.Drawing.Point(253, 176);
             this.Unvotedlbla.Name = "Unvotedlbla";
-            this.Unvotedlbla.Size = new System.Drawing.Size(76, 25);
+            this.Unvotedlbla.Size = new System.Drawing.Size(0, 25);
             this.Unvotedlbla.TabIndex = 8;
-            this.Unvotedlbla.Text = "label8";
             // 
             // label7
             // 
@@ -109,9 +108,8 @@ namespace Voting_system
             this.voterslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.voterslbl.Location = new System.Drawing.Point(253, 125);
             this.voterslbl.Name = "voterslbl";
-            this.voterslbl.Size = new System.Drawing.Size(76, 25);
+            this.voterslbl.Size = new System.Drawing.Size(0, 25);
             this.voterslbl.TabIndex = 6;
-            this.voterslbl.Text = "label5";
             // 
             // label6
             // 
@@ -130,9 +128,8 @@ namespace Voting_system
             this.registeredVoterLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registeredVoterLbl.Location = new System.Drawing.Point(253, 76);
             this.registeredVoterLbl.Name = "registeredVoterLbl";
-            this.registeredVoterLbl.Size = new System.Drawing.Size(76, 25);
+            this.registeredVoterLbl.Size = new System.Drawing.Size(0, 25);
             this.registeredVoterLbl.TabIndex = 4;
-            this.registeredVoterLbl.Text = "label3";
             // 
             // label4
             // 
@@ -155,7 +152,7 @@ namespace Voting_system
             this.winnerlbl.Name = "winnerlbl";
             this.winnerlbl.Size = new System.Drawing.Size(300, 20);
             this.winnerlbl.TabIndex = 1;
-            this.winnerlbl.Text = "label2";
+            this.winnerlbl.Click += new System.EventHandler(this.winnerlbl_Click);
             // 
             // label1
             // 

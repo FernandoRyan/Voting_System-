@@ -177,5 +177,10 @@ namespace Voting_system
             admin.Show();
             this.Hide();
         }
+
+        private void winnerlbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

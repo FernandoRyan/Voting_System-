@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Media;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
@@ -15,6 +17,9 @@ namespace Vote_System
 {
     public partial class QR_Reader : Form
     {
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Hp\Documents\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
+        string connectionstring = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Hp\Documents\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
+
         public QR_Reader()
         {
             InitializeComponent();
@@ -58,6 +63,51 @@ namespace Vote_System
         {
             if (captureDevice.IsRunning == true)
                 captureDevice.Stop();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+            try
+            {
+                string nic = "0";
+                string Nic=textBox1.Text;
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("select * from VoterTB  WHERE NIC=@NIC ", conn);
+                cmd.Parameters.AddWithValue("@NIC", textBox1.Text);
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    nic = dr["NIC"].ToString();
+                   
+                }
+
+                
+                if (nic == Nic)
+                {
+                    Cast_Vote cv = new Cast_Vote();
+                    cv.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid User");
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Internal error: {ex}");
+            }
+            finally
+            {
+                conn.Close(); 
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
