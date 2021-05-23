@@ -34,6 +34,8 @@
             this.lgAdmin = new System.Windows.Forms.PictureBox();
             this.PWD = new System.Windows.Forms.TextBox();
             this.uName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.Cntpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lgAdmin)).BeginInit();
@@ -58,6 +60,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Cntpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(221)))), ((int)(((byte)(203)))));
+            this.Cntpanel.Controls.Add(this.label2);
+            this.Cntpanel.Controls.Add(this.label1);
             this.Cntpanel.Controls.Add(this.LoginBtn);
             this.Cntpanel.Controls.Add(this.lgAdmin);
             this.Cntpanel.Controls.Add(this.PWD);
@@ -101,7 +105,6 @@
             this.PWD.PasswordChar = '*';
             this.PWD.Size = new System.Drawing.Size(247, 20);
             this.PWD.TabIndex = 1;
-            this.PWD.Text = "Password";
             // 
             // uName
             // 
@@ -110,7 +113,26 @@
             this.uName.Name = "uName";
             this.uName.Size = new System.Drawing.Size(247, 20);
             this.uName.TabIndex = 0;
-            this.uName.Text = "Username";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(36, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Username";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(38, 192);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Password";
             // 
             // log_in
             // 
@@ -118,7 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 393);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "log_in";
             this.Text = "log_in";
             this.panel1.ResumeLayout(false);
@@ -137,5 +159,7 @@
         private System.Windows.Forms.PictureBox lgAdmin;
         private System.Windows.Forms.TextBox PWD;
         private System.Windows.Forms.TextBox uName;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

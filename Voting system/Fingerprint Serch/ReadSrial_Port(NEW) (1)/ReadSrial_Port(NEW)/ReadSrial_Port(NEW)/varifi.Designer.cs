@@ -127,10 +127,10 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.nictxt);
             this.panel2.Controls.Add(this.Party);
-            this.panel2.Location = new System.Drawing.Point(379, 58);
+            this.panel2.Location = new System.Drawing.Point(393, 58);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(242, 324);
+            this.panel2.Size = new System.Drawing.Size(233, 324);
             this.panel2.TabIndex = 8;
             // 
             // button2
@@ -212,9 +212,9 @@
             this.Party.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Party.Location = new System.Drawing.Point(2, 9);
             this.Party.Name = "Party";
-            this.Party.Size = new System.Drawing.Size(226, 21);
+            this.Party.Size = new System.Drawing.Size(224, 21);
             this.Party.TabIndex = 27;
-            this.Party.Text = "National Idemtity Card number";
+            this.Party.Text = "National Identity Card Number";
             // 
             // label2
             // 
