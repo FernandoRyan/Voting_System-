@@ -35,7 +35,7 @@ namespace Voting_system
                 cdadd.Text = "";
                 cdparty.Text = "";
                 cdmail.Text = "";
-                MessageBox.Show(" Voter Registerd Successfully ");
+                MessageBox.Show(" Candidate Registerd Successfully ");
             }
             catch (SqlException er)
             {

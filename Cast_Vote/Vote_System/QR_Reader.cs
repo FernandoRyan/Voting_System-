@@ -32,6 +32,7 @@ namespace Vote_System
             captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
             timer1.Start();
+            lblnic.Text=string.Empty;
         }
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
@@ -52,7 +53,7 @@ namespace Vote_System
             Result results = barcodeReader.Decode((Bitmap)pictureBox1.Image);
             if (results != null)
             {
-                textBox1.Text = results.ToString();
+                lblnic.Text = results.ToString();
                 timer1.Stop();
                 if (captureDevice.IsRunning)
                     captureDevice.Stop();
@@ -71,10 +72,10 @@ namespace Vote_System
             try
             {
                 string nic = "0";
-                string Nic=textBox1.Text;
+                string Nic=lblnic.Text;
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("select * from VoterTB  WHERE NIC=@NIC ", conn);
-                cmd.Parameters.AddWithValue("@NIC", textBox1.Text);
+                cmd.Parameters.AddWithValue("@NIC", lblnic.Text);
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
@@ -108,6 +109,13 @@ namespace Vote_System
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Vote v = new Vote();
+            v.Show();
+            this.Hide();
         }
     }
 }
