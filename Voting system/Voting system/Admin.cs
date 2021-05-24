@@ -14,7 +14,7 @@ namespace Voting_system
     public partial class Admin : Form
     {
         //Establishing the database connectivity
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryana\OneDrive\Documents\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Hp\Documents\Voting_systemDb.mdf;Integrated Security=True;Connect Timeout=30");
 
         public Admin()
         {

@@ -31,16 +31,14 @@ namespace Voting_system
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register_Candidate));
             this.Content = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cdadd = new System.Windows.Forms.TextBox();
             this.NIC = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cdno = new System.Windows.Forms.TextBox();
             this.Address = new System.Windows.Forms.Label();
-            this.PartyAffilation = new System.Windows.Forms.ComboBox();
-            this.CandidateNO = new System.Windows.Forms.TextBox();
+            this.cdmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Party = new System.Windows.Forms.Label();
             this.CDmName = new System.Windows.Forms.Label();
-            this.CDname = new System.Windows.Forms.TextBox();
+            this.cdnic = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Submitbtn = new FontAwesome.Sharp.IconButton();
             this.logo = new System.Windows.Forms.Panel();
@@ -50,6 +48,12 @@ namespace Voting_system
             this.Signoutbtn = new FontAwesome.Sharp.IconButton();
             this.Reportbtn = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cdparty = new System.Windows.Forms.TextBox();
+            this.cddob = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cdname = new System.Windows.Forms.TextBox();
             this.Content.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -59,119 +63,98 @@ namespace Voting_system
             // Content
             // 
             this.Content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(111)))));
-            this.Content.Controls.Add(this.textBox2);
+            this.Content.Controls.Add(this.cdname);
+            this.Content.Controls.Add(this.label5);
+            this.Content.Controls.Add(this.label3);
+            this.Content.Controls.Add(this.label2);
+            this.Content.Controls.Add(this.cddob);
+            this.Content.Controls.Add(this.cdparty);
+            this.Content.Controls.Add(this.cdadd);
             this.Content.Controls.Add(this.NIC);
-            this.Content.Controls.Add(this.textBox1);
+            this.Content.Controls.Add(this.cdno);
             this.Content.Controls.Add(this.Address);
-            this.Content.Controls.Add(this.PartyAffilation);
-            this.Content.Controls.Add(this.CandidateNO);
+            this.Content.Controls.Add(this.cdmail);
             this.Content.Controls.Add(this.label4);
-            this.Content.Controls.Add(this.Party);
             this.Content.Controls.Add(this.CDmName);
-            this.Content.Controls.Add(this.CDname);
+            this.Content.Controls.Add(this.cdnic);
             this.Content.ForeColor = System.Drawing.Color.White;
             this.Content.Location = new System.Drawing.Point(218, 160);
             this.Content.Name = "Content";
-            this.Content.Size = new System.Drawing.Size(582, 372);
+            this.Content.Size = new System.Drawing.Size(582, 482);
             this.Content.TabIndex = 1;
             this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
             // 
-            // textBox2
+            // cdadd
             // 
-            this.textBox2.Location = new System.Drawing.Point(43, 313);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(367, 20);
-            this.textBox2.TabIndex = 14;
+            this.cdadd.Location = new System.Drawing.Point(43, 299);
+            this.cdadd.Name = "cdadd";
+            this.cdadd.Size = new System.Drawing.Size(415, 20);
+            this.cdadd.TabIndex = 14;
             // 
             // NIC
             // 
             this.NIC.AutoSize = true;
             this.NIC.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NIC.ForeColor = System.Drawing.Color.White;
-            this.NIC.Location = new System.Drawing.Point(41, 286);
+            this.NIC.Location = new System.Drawing.Point(41, 17);
             this.NIC.Name = "NIC";
             this.NIC.Size = new System.Drawing.Size(134, 25);
             this.NIC.TabIndex = 13;
             this.NIC.Text = "Candidate NIC";
             // 
-            // textBox1
+            // cdno
             // 
-            this.textBox1.Location = new System.Drawing.Point(43, 251);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(367, 20);
-            this.textBox1.TabIndex = 12;
+            this.cdno.Location = new System.Drawing.Point(43, 238);
+            this.cdno.Name = "cdno";
+            this.cdno.Size = new System.Drawing.Size(237, 20);
+            this.cdno.TabIndex = 12;
             // 
             // Address
             // 
             this.Address.AutoSize = true;
             this.Address.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Address.ForeColor = System.Drawing.Color.White;
-            this.Address.Location = new System.Drawing.Point(41, 214);
+            this.Address.Location = new System.Drawing.Point(41, 271);
             this.Address.Name = "Address";
             this.Address.Size = new System.Drawing.Size(170, 25);
             this.Address.TabIndex = 11;
             this.Address.Text = "Candidate Address";
             // 
-            // PartyAffilation
+            // cdmail
             // 
-            this.PartyAffilation.FormattingEnabled = true;
-            this.PartyAffilation.Items.AddRange(new object[] {
-            "Sri Lanka Peoples Freedom Alliance",
-            "Samagi Jana Balawegaya",
-            "Tamil National Alliance",
-            "National Peoples Power",
-            "Tamil National Peoples Front"});
-            this.PartyAffilation.Location = new System.Drawing.Point(43, 105);
-            this.PartyAffilation.Name = "PartyAffilation";
-            this.PartyAffilation.Size = new System.Drawing.Size(367, 21);
-            this.PartyAffilation.TabIndex = 10;
-            // 
-            // CandidateNO
-            // 
-            this.CandidateNO.Location = new System.Drawing.Point(43, 179);
-            this.CandidateNO.Name = "CandidateNO";
-            this.CandidateNO.Size = new System.Drawing.Size(367, 20);
-            this.CandidateNO.TabIndex = 9;
+            this.cdmail.Location = new System.Drawing.Point(42, 435);
+            this.cdmail.Name = "cdmail";
+            this.cdmail.Size = new System.Drawing.Size(416, 20);
+            this.cdmail.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(41, 142);
+            this.label4.Location = new System.Drawing.Point(41, 210);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 25);
             this.label4.TabIndex = 8;
             this.label4.Text = "Candidate No ";
-            // 
-            // Party
-            // 
-            this.Party.AutoSize = true;
-            this.Party.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Party.ForeColor = System.Drawing.Color.White;
-            this.Party.Location = new System.Drawing.Point(41, 67);
-            this.Party.Name = "Party";
-            this.Party.Size = new System.Drawing.Size(141, 25);
-            this.Party.TabIndex = 6;
-            this.Party.Text = "Party Affiliation";
             // 
             // CDmName
             // 
             this.CDmName.AutoSize = true;
             this.CDmName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CDmName.ForeColor = System.Drawing.Color.White;
-            this.CDmName.Location = new System.Drawing.Point(41, 11);
+            this.CDmName.Location = new System.Drawing.Point(41, 77);
             this.CDmName.Name = "CDmName";
             this.CDmName.Size = new System.Drawing.Size(207, 25);
             this.CDmName.TabIndex = 2;
             this.CDmName.Text = "Full name of Candidate";
             // 
-            // CDname
+            // cdnic
             // 
-            this.CDname.Location = new System.Drawing.Point(43, 44);
-            this.CDname.Name = "CDname";
-            this.CDname.Size = new System.Drawing.Size(366, 20);
-            this.CDname.TabIndex = 0;
+            this.cdnic.Location = new System.Drawing.Point(43, 44);
+            this.cdnic.Name = "cdnic";
+            this.cdnic.Size = new System.Drawing.Size(237, 20);
+            this.cdnic.TabIndex = 0;
             // 
             // label1
             // 
@@ -195,7 +178,7 @@ namespace Voting_system
             this.Submitbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Submitbtn.IconSize = 22;
             this.Submitbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Submitbtn.Location = new System.Drawing.Point(695, 562);
+            this.Submitbtn.Location = new System.Drawing.Point(695, 652);
             this.Submitbtn.Name = "Submitbtn";
             this.Submitbtn.Size = new System.Drawing.Size(93, 31);
             this.Submitbtn.TabIndex = 12;
@@ -222,7 +205,7 @@ namespace Voting_system
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(212, 544);
+            this.panel2.Size = new System.Drawing.Size(212, 634);
             this.panel2.TabIndex = 19;
             // 
             // panel3
@@ -285,6 +268,7 @@ namespace Voting_system
             this.Reportbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Reportbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Reportbtn.UseVisualStyleBackColor = true;
+            this.Reportbtn.Click += new System.EventHandler(this.Reportbtn_Click);
             // 
             // panel1
             // 
@@ -298,12 +282,66 @@ namespace Voting_system
             this.panel1.Size = new System.Drawing.Size(196, 95);
             this.panel1.TabIndex = 1;
             // 
+            // cdparty
+            // 
+            this.cdparty.Location = new System.Drawing.Point(42, 366);
+            this.cdparty.Name = "cdparty";
+            this.cdparty.Size = new System.Drawing.Size(416, 20);
+            this.cdparty.TabIndex = 15;
+            // 
+            // cddob
+            // 
+            this.cddob.Location = new System.Drawing.Point(43, 171);
+            this.cddob.Name = "cddob";
+            this.cddob.Size = new System.Drawing.Size(237, 20);
+            this.cddob.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(41, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 25);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Date Of Brith";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(41, 338);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(141, 25);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Party Affiliation";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(41, 407);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 25);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "E-mail";
+            // 
+            // cdname
+            // 
+            this.cdname.Location = new System.Drawing.Point(42, 102);
+            this.cdname.Name = "cdname";
+            this.cdname.Size = new System.Drawing.Size(510, 20);
+            this.cdname.TabIndex = 21;
+            // 
             // Register_Candidate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(80)))), ((int)(((byte)(111)))));
-            this.ClientSize = new System.Drawing.Size(800, 544);
+            this.ClientSize = new System.Drawing.Size(800, 634);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Submitbtn);
@@ -328,16 +366,14 @@ namespace Voting_system
 
         private System.Windows.Forms.Panel logo;
         private System.Windows.Forms.Panel Content;
-        private System.Windows.Forms.TextBox CandidateNO;
+        private System.Windows.Forms.TextBox cdmail;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label Party;
         private System.Windows.Forms.Label  CDmName;
-        private System.Windows.Forms.TextBox CDname;
-        private System.Windows.Forms.ComboBox PartyAffilation;
+        private System.Windows.Forms.TextBox cdnic;
         private FontAwesome.Sharp.IconButton Submitbtn;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox cdadd;
         private System.Windows.Forms.Label NIC;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cdno;
         private System.Windows.Forms.Label Address;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
@@ -346,5 +382,11 @@ namespace Voting_system
         private FontAwesome.Sharp.IconButton Signoutbtn;
         private FontAwesome.Sharp.IconButton Reportbtn;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox cdname;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker cddob;
+        private System.Windows.Forms.TextBox cdparty;
     }
 }

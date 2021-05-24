@@ -81,7 +81,10 @@ namespace Voting_system
             this.Hide();
         }
 
-        
+        private void Registerbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     internal class Sqlconnection
