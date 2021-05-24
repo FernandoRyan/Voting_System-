@@ -119,7 +119,6 @@ namespace Voting_system
             this.PWD.PasswordChar = '*';
             this.PWD.Size = new System.Drawing.Size(247, 20);
             this.PWD.TabIndex = 1;
-            this.PWD.Text = "Password";
             this.PWD.UseSystemPasswordChar = true;
             // 
             // uName

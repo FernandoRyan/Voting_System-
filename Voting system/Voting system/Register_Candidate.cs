@@ -25,7 +25,7 @@ namespace Voting_system
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into candidatetb(NIC,name,DOB,candidateno,candidateadd,party,email)  values ('" + cdnic.Text + "','" + cdname.Text + "','" + cddob.Value.Date.ToString("yyyyMMdd") + "','" + cdno.Text + "','" + cdadd.Text + "', '" + cdparty.Text + "', '" + cdmail.Text + "')";
+                cmd.CommandText = "insert into candidatetb(NIC,name,DOB,candidateno,candidateadd,party,email)  values ('" + cdnic.Text + "','" + cdname.Text + "','" + cddob.Value.Date.ToString("yyyyMMdd") + "','" + cdno.Text + "','" + cdadd.Text + "', '" + comboBox1.Text.ToString() + "', '" + cdmail.Text + "')";
                 cmd.ExecuteNonQuery();
                 con.Close();
                 cdnic.Text = "";
@@ -33,7 +33,7 @@ namespace Voting_system
                 cddob.Value = DateTime.Now;
                 cdno.Text = "";
                 cdadd.Text = "";
-                cdparty.Text = "";
+                comboBox1.Text = "";
                 cdmail.Text = "";
                 MessageBox.Show(" Candidate Registerd Successfully ");
             }
@@ -64,6 +64,11 @@ namespace Voting_system
         private void Reportbtn_Click(object sender, EventArgs e)
         {
             Reg();
+        }
+
+        private void cdparty_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
