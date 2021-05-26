@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button2 = new System.Windows.Forms.Button();
+            this.btncek = new System.Windows.Forms.Button();
             this.lblnic = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -54,7 +54,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(4, 119);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 31);
             this.button1.TabIndex = 0;
@@ -66,7 +66,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(261, 60);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(372, 24);
             this.comboBox1.TabIndex = 1;
@@ -87,7 +87,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Location = new System.Drawing.Point(7, 274);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(471, 375);
             this.pictureBox1.TabIndex = 3;
@@ -95,20 +95,20 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
+            this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button2
+            // btncek
             // 
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(188, 119);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 30);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Check";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btncek.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btncek.Location = new System.Drawing.Point(188, 119);
+            this.btncek.Margin = new System.Windows.Forms.Padding(4);
+            this.btncek.Name = "btncek";
+            this.btncek.Size = new System.Drawing.Size(144, 30);
+            this.btncek.TabIndex = 5;
+            this.btncek.Text = "Check";
+            this.btncek.UseVisualStyleBackColor = true;
+            this.btncek.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblnic
             // 
@@ -124,10 +124,10 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lblnic);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btncek);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(488, 274);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(336, 166);
             this.panel1.TabIndex = 7;
@@ -138,7 +138,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Location = new System.Drawing.Point(16, 9);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(812, 121);
             this.panel2.TabIndex = 8;
@@ -189,12 +189,12 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(698, 633);
+            this.linkLabel1.Location = new System.Drawing.Point(731, 633);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(130, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(105, 16);
             this.linkLabel1.TabIndex = 12;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Back to cate Vote";
+            this.linkLabel1.Text = "Back to Home";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // QR_Reader
@@ -213,7 +213,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "QR_Reader";
@@ -238,7 +238,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btncek;
         private System.Windows.Forms.Label lblnic;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;

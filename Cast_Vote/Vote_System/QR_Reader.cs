@@ -68,7 +68,7 @@ namespace Vote_System
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
+            
             try
             {
                 string nic = "0";
@@ -82,13 +82,40 @@ namespace Vote_System
                     nic = dr["NIC"].ToString();
                    
                 }
-
-                
+                conn.Close();
                 if (nic == Nic)
                 {
-                    Cast_Vote cv = new Cast_Vote();
-                    cv.Show();
-                    this.Hide();
+                    
+                    string nic2 = "0";
+                    conn.Open();
+                    SqlCommand cmd2 = new SqlCommand("select * from verify  WHERE NIC=@NIC ", conn);
+                    cmd2.Parameters.AddWithValue("@NIC", lblnic.Text);
+                    SqlDataReader dr1 = cmd2.ExecuteReader();
+                    while (dr1.Read())
+                    {
+                        nic2 = dr1["NIC"].ToString();
+                    }
+                    conn.Close();
+                    if (nic2==Nic)
+                    {
+                        MessageBox.Show(" Your vote has been used. ");
+                        Vote v = new Vote();
+                        v.Show();
+                        this.Close();
+                    }
+                    else
+                    { 
+                        conn.Open();
+                        SqlCommand cmd1 = conn.CreateCommand();
+                        cmd1.CommandType = CommandType.Text;
+                        cmd1.CommandText = "insert into verify(NIC)  values ('" + lblnic.Text + "')";
+                        cmd1.ExecuteNonQuery();
+                        conn.Close();
+                        Cast_Vote cv = new Cast_Vote();
+                        cv.Show();
+                        this.Close();
+                    }
+                    
                 }
                 else
                 {
@@ -101,8 +128,7 @@ namespace Vote_System
                 MessageBox.Show($"Internal error: {ex}");
             }
             finally
-            {
-                conn.Close(); 
+            { 
             }
         }
 
