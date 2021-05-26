@@ -43,6 +43,7 @@ namespace Vote_System
             this.label1 = new System.Windows.Forms.Label();
             this.logopanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -57,6 +58,7 @@ namespace Vote_System
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(221)))), ((int)(((byte)(203)))));
+            this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.iconPictureBox4);
             this.panel1.Controls.Add(this.iconPictureBox3);
             this.panel1.Controls.Add(this.iconPictureBox2);
@@ -69,7 +71,7 @@ namespace Vote_System
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(9, 109);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 332);
+            this.panel1.Size = new System.Drawing.Size(776, 405);
             this.panel1.TabIndex = 1;
             // 
             // iconPictureBox4
@@ -219,7 +221,7 @@ namespace Vote_System
             this.logopanel.Controls.Add(this.panel1);
             this.logopanel.Location = new System.Drawing.Point(1, -5);
             this.logopanel.Name = "logopanel";
-            this.logopanel.Size = new System.Drawing.Size(799, 460);
+            this.logopanel.Size = new System.Drawing.Size(799, 533);
             this.logopanel.TabIndex = 1;
             // 
             // panel2
@@ -232,11 +234,23 @@ namespace Vote_System
             this.panel2.Size = new System.Drawing.Size(651, 86);
             this.panel2.TabIndex = 2;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(105, 353);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(115, 22);
+            this.radioButton1.TabIndex = 10;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Discard Vote";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Cast_Vote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 523);
             this.Controls.Add(this.logopanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cast_Vote";
@@ -268,5 +282,6 @@ namespace Vote_System
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
